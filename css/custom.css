@@ -1,0 +1,75 @@
+/** ADD YOUR AWESOME CODES HERE **/
+.cert-section {
+  padding: 4.5rem 0;
+  background: #fff;
+}
+.cert-section.alt { background:#f7f9fc; }
+
+.cert-section .container.grid {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.cert-section .text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+  color: #003366; /* dark blue */
+}
+
+.cert-section .text p { color: #444; line-height:1.6; }
+
+.cert-section .image { text-align:center; }
+.cert-section .image img { max-width:100%; height:auto; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.08); }
+
+.btn-outline {
+  display:inline-block;
+  padding:0.7rem 1.2rem;
+  border:2px solid #003366;
+  color:#003366;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:600;
+}
+.btn-outline:hover{ background:#003366;color:#fff; transition:all .18s ease; }
+
+@media (max-width:900px) {
+  .cert-section .container.grid { grid-template-columns: 1fr; }
+  .cert-section .image { order:-1; margin-bottom:1rem; }
+}
+
+.transparent-bg {
+  background: transparent;
+  display: block;
+  width: auto;
+  height: auto;
+}
+#certModal .cert-card a.choose-contact {
+  margin-top: 10px;   /* Adjust spacing as needed */
+  display: inline-block;
+}
+
+#certModal .cert-card p {
+  margin-bottom: 20px; /* Increase space below paragraph */
+}
+/* Lower the buttons in certification cards */
+#certModal .cert-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-bottom: 30px; /* gives extra bottom space */
+}
+
+/* Give more breathing room under text */
+#certModal .cert-card p {
+  margin-bottom: 60px; /* increase spacing under paragraph */
+  flex-grow: 1;
+}
+
+/* Make sure button stays near the bottom */
+#certModal .cert-card a.choose-contact {
+  margin-top: auto;
+  align-self: flex-start;
+}
