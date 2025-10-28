@@ -399,65 +399,7 @@
   .cert-dialog .cert-close { position: absolute; right: 12px; top: 12px; z-index: 10000; cursor: pointer; background: transparent; border: 0; font-size: 22px; }
 </style>
 
-<script>
-  (function () {
-    var modal = document.getElementById('certModal');
-    if (!modal) return;
 
-    function escHandler(e) { if (e.key === 'Escape') closeModal(); }
-
-    function openModal(certKey) {
-      modal.setAttribute('aria-hidden', 'false');
-      modal.style.display = 'block';
-      // highlight selection
-      modal.querySelectorAll('.cert-card.selected').forEach(function (el) { el.classList.remove('selected'); });
-      if (certKey) {
-        var sel = modal.querySelector('.cert-card[data-certkey="' + certKey + '"]');
-        if (sel) sel.classList.add('selected');
-      }
-      // focus close button for accessibility
-      var closeBtn = modal.querySelector('.cert-close');
-      if (closeBtn) closeBtn.focus();
-      document.addEventListener('keydown', escHandler);
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeModal() {
-      modal.setAttribute('aria-hidden', 'true');
-      modal.style.display = 'none';
-      modal.querySelectorAll('.cert-card.selected').forEach(function (el) { el.classList.remove('selected'); });
-      document.removeEventListener('keydown', escHandler);
-      document.body.style.overflow = '';
-    }
-
-    // Delegated click handler: opens, closes, and handles internal actions.
-    document.addEventListener('click', function (e) {
-      // open: buttons with both classes/data attribute
-      var openBtn = e.target.closest('.btn-outline[data-cert]');
-      if (openBtn) {
-        e.preventDefault();
-        openModal(openBtn.getAttribute('data-cert'));
-        return;
-      }
-
-      // close: overlay or close button
-      if (e.target.closest('.cert-overlay') || e.target.closest('.cert-close')) {
-        e.preventDefault();
-        closeModal();
-        return;
-      }
-
-      // modal "Contact" actions
-            var ch = e.target.closest('.choose-contact');
-if (ch) {
-  e.preventDefault();
-  var cert = ch.getAttribute('data-cert') || '';
-  window.location.href = './contact.html?cert=' + encodeURIComponent(cert);
-}
-
-}, true);
-  }());
-</script>
     <!-- Start Footer -->
     <footer class="footer-box">
         <div class="container">
@@ -669,6 +611,65 @@ jQuery(function ($) {
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
+    <script>
+  (function () {
+    var modal = document.getElementById('certModal');
+    if (!modal) return;
+
+    function escHandler(e) { if (e.key === 'Escape') closeModal(); }
+
+    function openModal(certKey) {
+      modal.setAttribute('aria-hidden', 'false');
+      modal.style.display = 'block';
+      // highlight selection
+      modal.querySelectorAll('.cert-card.selected').forEach(function (el) { el.classList.remove('selected'); });
+      if (certKey) {
+        var sel = modal.querySelector('.cert-card[data-certkey="' + certKey + '"]');
+        if (sel) sel.classList.add('selected');
+      }
+      // focus close button for accessibility
+      var closeBtn = modal.querySelector('.cert-close');
+      if (closeBtn) closeBtn.focus();
+      document.addEventListener('keydown', escHandler);
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.setAttribute('aria-hidden', 'true');
+      modal.style.display = 'none';
+      modal.querySelectorAll('.cert-card.selected').forEach(function (el) { el.classList.remove('selected'); });
+      document.removeEventListener('keydown', escHandler);
+      document.body.style.overflow = '';
+    }
+
+    // Delegated click handler: opens, closes, and handles internal actions.
+    document.addEventListener('click', function (e) {
+      // open: buttons with both classes/data attribute
+      var openBtn = e.target.closest('.btn-outline[data-cert]');
+      if (openBtn) {
+        e.preventDefault();
+        openModal(openBtn.getAttribute('data-cert'));
+        return;
+      }
+
+      // close: overlay or close button
+      if (e.target.closest('.cert-overlay') || e.target.closest('.cert-close')) {
+        e.preventDefault();
+        closeModal();
+        return;
+      }
+
+      // modal "Contact" actions
+            var ch = e.target.closest('.choose-contact');
+if (ch) {
+  e.preventDefault();
+  var cert = ch.getAttribute('data-cert') || '';
+  window.location.href = './contact.html?cert=' + encodeURIComponent(cert);
+}
+
+}, true);
+  }());
+</script>
 </body>
 
 </html>
