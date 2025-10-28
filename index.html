@@ -449,12 +449,13 @@
 
       // modal "Contact" actions
             var ch = e.target.closest('.choose-contact');
-            if (ch) {
-                e.preventDefault();
-                var cert = ch.getAttribute('data-cert') || '';
-                window.location.href = '/contact.html?cert=' + encodeURIComponent(cert);
-            }
-    }, true);
+if (ch) {
+  e.preventDefault();
+  var cert = ch.getAttribute('data-cert') || '';
+  window.location.href = './contact.html?cert=' + encodeURIComponent(cert);
+}
+
+}, true);
   }());
 </script>
     <!-- Start Footer -->
