@@ -51,7 +51,130 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+<style>
+    /* Remove unwanted top space above navbar */
+body#inner_page {
+  margin: 0 !important;
+  padding: 0 !important;
+}
 
+/* Ensure header sits flush at the top */
+.top-header {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Remove extra padding from first nav if needed */
+.first-nav_contact {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: #333;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  header {
+    text-align: center;
+    padding: 60px 20px 40px 20px;
+    background-color: #2d67a1;
+    color: #fff;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  section {
+    margin-bottom: 60px;
+  }
+
+  section h2 {
+    font-size: 2rem;
+    color: #4b7fb4;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  section p {
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+  }
+
+  .values-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+  }
+
+  .value-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px 20px;
+    flex: 1 1 280px;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+
+  .value-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .value-item h3 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 15px;
+  }
+
+  .value-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  .cta {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .btn-primary {
+    background-color: #0d3e70;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  .btn-primary:hover {
+    background-color: #0055a5;
+  }
+</style>
 </head>
 
 <body id="inner_page" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
@@ -64,24 +187,24 @@
     <!-- Start Header -->
     <header class="top-header">
         <nav class="first-nav_contact">
-            <div class="left">
+             <div class="left">
                 <ul>
-                    <li><a href="mailto:info@vasave.uk"><span class="first-nav_contact-icon img" id="first"><img src="/img/icons/email_sealed_icon_fill_white.png" alt="Vasave Business Solutions Email Address"></span><span>info@vasave.uk</span></a></li>
-                    <li><a href="tel:44 02034886800"><span class="first-nav_contact-icon follow"><img src="/img/icons/landline_icon_fill_white.png" alt="Vasave Business Solutions Phone Number"></span><span>+44 020 3488 6800</span></a></li>
+                    <li><a href="mailto:info@vasave.uk"><span class="first-nav_contact-icon img" id="first"><img src="C:\Users\Aishwarya\OneDrive - Vasave Business Solutions\Desktop\AICyberops1\img\icons\email_sealed_icon_fill_white.png" alt="Vasave Business Solutions Email Address"></span><span>info@vasave.uk</span></a></li>
+                    <li><a href="tel:44 02034886800"><span class="first-nav_contact-icon follow"><img src="C:\Users\Aishwarya\OneDrive - Vasave Business Solutions\Desktop\AICyberops1\img\icons\landline_icon_fill_white.png" alt="Vasave Business Solutions Phone Number"></span><span>+44 020 3488 6800</span></a></li>
                 </ul>
             </div>
             <div class="right">
                 <ul>
-                    <li><a href="https://wa.me/4402034886800" target="_blank"><span class="first-nav_contact-icon"><img src="/img/socials/whatsapp_icon_white.svg" alt="Vasave Business Solutions WhatsApp Contact Direct"></span></a></li>
-                    <li><a href="https://www.instagram.com/vasavebs/" target="_blank"><span class="first-nav_contact-icon"><img src="/img/socials/ig_icon_white.svg" alt="Vasave Business Solutions Instagram Page"></span></a></li>
-                    <li><a href="https://www.facebook.com/VasaveBusinessSolutions" target="_blank"><span class="first-nav_contact-icon"><img src="/img/socials/fb_icon_white.svg" alt="Vasave Business Solutions Facebook Page"></span></a></li>
-                    <li><a href="https://www.linkedin.com/company/vasave-business-solutions-ltd/" target="_blank"><span class="first-nav_contact-icon"><img src="/img/socials/linkedin_icon_white.svg" alt="Vasave Business Solutions LinkedIn Page"></span></a></li>
+                    <li><a href="https://wa.me/4402034886800" target="_blank"><span class="first-nav_contact-icon"><img src="C:\Users\Aishwarya\OneDrive - Vasave Business Solutions\Desktop\AICyberops1\img\socials\whatsapp_icon_white.svg" alt="Vasave Business Solutions WhatsApp Contact Direct"></span></a></li>
+                    <li><a href="https://www.instagram.com/vasavebs/" target="_blank"><span class="first-nav_contact-icon"><img src="C:\Users\Aishwarya\OneDrive - Vasave Business Solutions\Desktop\AICyberops1\img\socials\ig_icon_white.svg" alt="Vasave Business Solutions Instagram Page"></span></a></li>
+                    <li><a href="https://www.facebook.com/VasaveBusinessSolutions" target="_blank"><span class="first-nav_contact-icon"><img src="C:\Users\Aishwarya\OneDrive - Vasave Business Solutions\Desktop\AICyberops1\img\socials\fb_icon_white.svg" alt="Vasave Business Solutions Facebook Page"></span></a></li>
+                    <li><a href="https://www.linkedin.com/company/vasave-business-solutions-ltd/" target="_blank"><span class="first-nav_contact-icon"><img src="C:\Users\Aishwarya\OneDrive - Vasave Business Solutions\Desktop\AICyberops1\img\socials\linkedin_icon_white.svg" alt="Vasave Business Solutions LinkedIn Page"></span></a></li>
                 </ul>
             </div>
         </nav>
         <nav class="navbar header-nav navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/index.html"><img src="/img/logo/vbs_logo.png" alt="Vasave Business Solutions Official Logo"></a>
+                <a class="navbar-brand" href="/index.html"><img src="img/logo/aicyberops_logo.png" alt="AICyberops logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
                     <span></span>
                     <span></span>
@@ -100,252 +223,78 @@
         </nav>
     </header>
     <!-- End Header -->
-	<!-- start section -->
-	<section class="inner_banner">
-	<div class="container">
-	<div class="row">
-		<div class="col-12">
-			<div class="full">
-				<h1>What We Stand For</h1>
-			</div>
-		</div>
-	</div>
-	</div>
-	</section>
-	<!-- end section -->
-	<!-- start section -->
-    <div class="section layout_padding_2">
-        <div class="container">
-            <div class="row">
-                <div class="full">
-                    <div class="heading_main text_align_center">
-                        <h2>Our Culture</h2>
-                    </div>
-                </div>
-                <div class="full">
-                    <div class="text_align_center">
-                        <p>Vasave Business Solutions is an employee-centric company; its culture is the true definition of a team-oriented environment as it operates outside of the typical office structure. Employees are pushed to work together as there is an excellent emphasis on brainstorming, feedback and innovation, resulting in a higher quality of everything we produce. The collective mind is better than one.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+	<!-- What We Stand For Page -->
+
+
+
+
+
+<header>
+  <h1>What We Stand For</h1>
+  <p>
+    At AICyberops, cybersecurity is more than a service — it's a commitment. We help businesses protect 
+    their data, reputation, and operations by delivering trusted, practical, and effective cybersecurity solutions.
+  </p>
+</header>
+
+<section>
+  <h2>Our Mission</h2>
+  <p>
+    Our mission is to empower businesses of all sizes to confidently manage their cybersecurity risks. 
+    We strive to make cybersecurity accessible, understandable, and effective for every organisation we serve.
+  </p>
+</section>
+
+<section>
+  <h2>Our Core Values</h2>
+  <div class="values-grid">
+    <div class="value-item">
+      <h3>Integrity</h3>
+      <p>We act with honesty, transparency, and accountability in everything we do, building trust with our clients and partners.</p>
     </div>
-	<!-- end section -->
-    <!-- start section -->
-    <div class="section">
-        <div class="container">
-            <div class="row">
-                <div class="full">
-                    <div class="heading_main text_align_center">
-                        <h2>Virtues and Values</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="value-item">
+      <h3>Excellence</h3>
+      <p>We deliver high-quality, practical cybersecurity solutions that meet the unique needs of each organisation.</p>
     </div>
-    <!-- end section -->
-	<!-- start section -->
-    <div class="section layout_padding_2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="full">
-                        <div class="heading_main text_align_left">
-						<h3>Integrity</h3>
-                        </div>
-						<div class="full">
-						<p>Here at Vasave, integrity is found in everything that we do and produce as we have solid ethical and moral principles in which all our employees follow at all times. We act with honesty, honour and truthfulness even if no one is watching. We believe that by firmly believing and following this, a client will be more likely to do business with us and attract the right people to work for us, resulting in the retention of good customers allowing us to develop our business even more.</p>
-						</div>
-                    </div>
-                </div>
-				<div class="col-md-6">
-                    <div class="full">
-                        <img src="../img/unsplash/about-us_what-we-stand-for_integrity.jpg" alt="Integrity at Vasave - Supporting Image">
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="value-item">
+      <h3>Innovation</h3>
+      <p>We continuously explore new technologies and methods to stay ahead of evolving cyber threats.</p>
     </div>
-	<!-- end section -->
-	<!-- start section-->
-	<div class="section layout_padding_2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="full">
-                        <img src="../img/unsplash/about-us_what-we-stand-for_leadership.jpg" alt="Leadership at Vasave - Supporting Image"/>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="full">
-                        <div class="heading_main text_align_left">
-                            <h3>Leadership</h3>
-                        </div>
-                        <div class="full">
-                            <p>As the great Alexandre Havard would say, "Leadership is about achieving greatness and bringing out greatness in others." At Vasave, a quote has never been closer to home; all the employees within this organisation are pushed to their limits, reaching their full potential and be the best version of themselves that they can be by providing them with the most suitable training and experience that will allow them to be themselves and flourish in their expertise.By developing employees' talents, this organisation has proven time and time again that we are able to outperform competitors and excel where others do not.</p>
-                        </div>
-                    </div>
-                </div>	
-            </div>
-        </div>
+    <div class="value-item">
+      <h3>Collaboration</h3>
+      <p>We work closely with clients, partners, and the wider cybersecurity community to share knowledge and strengthen security.</p>
     </div>
-	<!-- end section-->
-	<!-- start section -->
-	<div class="section layout_padding_2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="full">
-                        <div class="heading_main text_align_left">
-                            <h3>Responsibility</h3>
-                        </div>
-						<div class="full">
-                            <p>We believe that this is one of those virtues that has a broad meaning. For starters, this could mean having the responsibilities to its customers and employees by delivering on its promises; on the other hand, it could also mean considering the impact its operations may have on society and the environment. Here at Vasave, everything is considered in everything we do and produce; everything matters to us: the environment, customers, employers, and our stakeholders.</p>
-						</div>
-                    </div>
-                </div>
-				<div class="col-md-6">
-                    <div class="full">
-                        <img src="../img/unsplash/about-us_what-we-stand-for_responsibility.jpg" alt="Responsibility at Vasave - Supporting Image"/>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="value-item">
+      <h3>Empowerment</h3>
+      <p>We educate and enable businesses to take control of their cybersecurity, making informed and confident decisions.</p>
     </div>
-	<!-- end section -->
-	<!-- start section -->
-	<div class="section layout_padding_2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="full">
-                        <img src="../img/unsplash/about-us_what-we-stand-for_fairness.jpg" alt="Fairness at Vasave - Image Support"/>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="full">
-                        <div class="heading_main text_align_left">
-                            <h3>Fairness</h3>
-                        </div>
-						<div class="full">
-                            <p>At Vasave, we believe that people will remain loyal to your business by interacting fairly with your customers, employers and everyone else involving your organization. It means managing all employees and customers with dignity, respect and not using standards for one group of individuals that make others feel as if they are not as valued, favoured or essential. To ensure that we treat everyone around us fairly, we make your compensation structure transparent and give everyone an equal opportunity to be recognized, promoted, and appeal decisions they consider unfair. Fairness is a virtue that has served businesses well for decades, and this is something we stay true to.</p>
-						</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	<!-- end section -->
-	<!-- start section -->
-    <div class="section layout_padding_2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="full">
-                        <div class="heading_main text_align_left">
-                            <h3>Consistency</h3>
-                        </div>
-                        <div class="full">
-                            <p>Here at Vasave, we believe that a company that is consistent with firmly applying its values in everything that they do and produce will have a solid corporate culture and structure. Customers and employees want to know that the business will be constant in terms of the performance and the quality of work produced, whatever the task is in hand, whether it would be when attempting to increase the sales of a product when promoting or creating content for the product. Demonstrating values consistently will reassure the company's stakeholders, helping to build a solid and growing organization.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="full">
-                        <img src="../img/unsplash/about-us_what-we-stand-for_consistency.jpg" alt="Consistency at Vasave - Supporting Image">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	<!-- end section -->
-    <!-- start section -->
-    <div class="section layout_padding_2">
-        <div class="container">
-            <div class="row">
-                <div class="full">
-                    <div class="heading_main text_align_center">
-                        <h2>Our Ethos</h2>
-                    </div>
-                    <div class="full">
-                        <div class="text_align_center">
-                            <p>Vasave Business Solutions is unlike any other business solutions agencies. We exist solely to deliver specialised assistance on selecting and implementing the best cloud, infrastructure and web solutions at an unbeatable price tailored to your needs. We will ensure a scale to growth strategy is formulated, help you switch from local storage to cloud storage, and support you with setting up a virtual presence on the web that will generate unlimited leads, maximum ROI, and more sales than previously. We are home to a highly experienced team of strategists, marketers and software developers, all at the forefront of the industry's innovation.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end section -->
-    <!-- start section -->
-    <div class="section">
-        <div class="container">
-            <div class="row">
-                <div class="full">
-                    <div class="heading_main text_align_center">
-                        <h2>Our Goals</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end section -->
-    <!-- start section -->
-    <div class="section layout_padding_2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="full">
-                        <img src="../img/unsplash/about-us_what-we-stand-for_hiring-potential-from-all-over.jpg" alt="Hiring Potential from All Over - Supporting Image ">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="full">
-                        <div class="heading_main text_align_left">
-                            <h3>Hiring Potential from All Over </h3>
-                        </div>
-                        <div class="full">
-                            <p>One of our primary goals is to attract young and talented people worldwide to come and join us as we help create new products, services, experiences and business models that grow the UK economy. We have a diverse, open and agile culture. We work together, across boundaries, to meet the needs of our customers and to help our Company win. You will be working side by side with some of the brightest minds to make the UK a digital world leader. We will introduce you to the industry you desire and provide you with the proper training, experiences and qualifications to help you kick start your career and lead you to a path to success.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end section -->
-    <!-- start section -->
-    <div class="section layout_padding_2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="full">
-                        <div class="heading_main text_align_left">
-                            <h3>Provide Answers to Every Challenge</h3>
-                        </div>
-                        <div class="full">
-                            <p>We believe that a business solution is a combination of ideas used to help a company achieve its goals and objectives. Some relevant solutions include technology evaluation, the organisation of complex business information and strategic planning. Businesses generate strategies that are action-oriented to develop their market.</p>
-                            <p>Naturally, our strategy is aligned with what we believe in. We distinguish what our clients need and help them identify the main roadblock they are faced with and how to resolve them. Vasave offers a wide range of unique business solutions that make our clients' lives more manageable, leading to taking their business to the next level.</p>
-                            <p>Our main goal is to provide our clients with the latest technologies to make users more efficient and effective to save time doing their tasks. We are committed to delivering the most trusted and reliable solutions tailored to your business.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="full">
-                        <img src="../img/unsplash/about-us_what-we-stand-for_provide-answers-to-every-challenge.jpg" alt="Provide Answers to Every Challenge - Supporting Image ">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end section -->
-    <!-- Start Footer -->
+  </div>
+</section>
+
+<section>
+  <h2>Our Approach</h2>
+  <p>
+    At AICyberops, we combine industry standards, best practices, and hands-on expertise to deliver 
+    cybersecurity solutions that are simple, effective, and aligned with your business goals. 
+    From risk assessments to certification guidance, we are with you every step of the way.
+  </p>
+</section>
+
+<div class="cta">
+  <a href="contact.html" class="btn-primary">Work With Us</a>
+</div>
+
+
+
+
+     <!-- Start Footer -->
     <footer class="footer-box">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
                     <div class="footer_blog">
                         <div class="full margin-bottom_30">
-                            <a href="/../index.html"><img class="logo" src="/../img/logo/vbs_logo.png" alt="Vasave Business Solutions Official Logo"/></a>
+                            <a href="index.html"><img class="logo" src="" alt="AICyberops Official Logo"/></a>
                         </div>
                     </div>
                 </div>
@@ -354,9 +303,10 @@
                     <div class="footer_blog footer_menu white_fonts">
                         <h5>About</h5>
                             <ul> 
-                                <li><a href="/../about.html">About Vasave Business</a></li>
-                                <li><a href="/../services.html">Our Services</a></li>
-                                <li><a href="/../about-us/what-we-stand-for.html">What We Stand For</a></li>
+                                <li><a href="about.html">About AICyberops</a></li>
+                                <li><a href="services.html">Our Services</a></li>
+                                <li><a href="about-us/what-we-stand-for.html">What We Stand For</a></li>
+				
                             </ul>
                     </div>
                 </div>
@@ -365,11 +315,10 @@
                     <div class="footer_blog footer_menu white_fonts">
                         <h5>Services</h5>
                             <ul> 
-                                <li><a href="/../services/cloud.html">Cloud</a></li>
-                                <li><a href="/../services/consultancy.html">Consultancy</a></li>
-                                <li><a href="/../services/cybersecurity.html">Cyber Security</a></li>
-                                <li><a href="/../services/infrastructure.html">Infrastructure</a></li>
-                                <li><a href="/services/BInDAaaS.html">Bioinformatics</a></li>
+                                <li><a href="C:\Users\Aishwarya\OneDrive - Vasave Business Solutions\Desktop\AICyberops1\services\cloud\google-workspace.html">Cyber Essentials</a></li>
+                                <li><a href="C:\Users\Aishwarya\OneDrive - Vasave Business Solutions\Desktop\AICyberops1\services\consultancy.html">Cyber Essential Plus</a></li>
+                               <li><a href="C:\Users\Aishwarya\OneDrive - Vasave Business Solutions\Desktop\AICyberops1\services\infrastructure.html">IASME Governance</a></li>
+
                             </ul>
                     </div>
                 </div>   
@@ -378,9 +327,9 @@
                     <div class="footer_blog full white_fonts">
                         <h5>Contact</h5>
                             <ul class="full footer_content">
-                                <li><img src="/../img/icons/address_icon.png" alt="Vasave Business Solutions Address">Helena 3, Airport House<br />Purley Way<br />Croydon<br />CR0 0XZ</li>
-                                <li><img src="/../img/icons/email_sealed_icon_fill.png" alt="Vasave Business Solutions Email Address">info@vasave.uk</li>
-                                <li><img src="/../img/icons/landline_icon_fill.png" alt="Vasave Business Solutions Phone Number">+44 20 3488 6800</li>
+                                <li><img src="img/icons/address_icon.png" alt="Vasave Business Solutions Address">Helena 3, Airport House<br />Purley Way<br />Croydon<br />CR0 0XZ</li>
+                                <li><img src="img/icons/email_sealed_icon_fill.png" alt="Vasave Business Solutions Email Address">info@vasave.uk</li>
+                                <li><img src="img/icons/landline_icon_fill.png" alt="Vasave Business Solutions Phone Number">+44 20 3488 6800</li>
                             </ul>
                     </div>
                 </div>	 
